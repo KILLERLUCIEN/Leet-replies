@@ -1,0 +1,58 @@
+class Solution {
+public:
+    string s;
+    int i = 0;
+
+    set<string> parseExpression() {
+        // Handles unions: expr,expr,...
+        set<string> result = parseTerm();
+
+        while (i < s.size() && s[i] == ',') {
+            ++i;
+            set<string> next = parseTerm();
+            result.insert(next.begin(), next.end());
+        }
+
+        return result;
+    }
+
+    set<string> parseTerm() {
+        // Handles concatenation of factors.
+        set<string> result = {""};
+
+        while (i < s.size() && s[i] != '}' && s[i] != ',') {
+            set<string> factor;
+
+            if (s[i] == '{') {
+                ++i; // skip '{'
+                factor = parseExpression();
+                ++i; // skip '}'
+            } else {
+                factor.insert(string(1, s[i]));
+                ++i;
+            }
+
+            set<string> combined;
+
+            for (const string& a : result) {
+                for (const string& b : factor) {
+                    combined.insert(a + b);
+                }
+            }
+
+            result = move(combined);
+        }
+
+        return result;
+    }
+
+public:
+    vector<string> braceExpansionII(string expression) {
+        s = expression;
+        i = 0;
+
+        set<string> result = parseExpression();
+
+        return vector<string>(result.begin(), result.end());
+    }
+};

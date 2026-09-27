@@ -10,4 +10,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0181-employees-earning-more-than-their-managers](https://github.com/KILLERLUCIEN/Leet-replies/tree/master/0181-employees-earning-more-than-their-managers) |
 | [0584-find-customer-referee](https://github.com/KILLERLUCIEN/Leet-replies/tree/master/0584-find-customer-referee) |
 | [0620-not-boring-movies](https://github.com/KILLERLUCIEN/Leet-replies/tree/master/0620-not-boring-movies) |
+## String
+|  |
+| ------- |
+| [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/KILLERLUCIEN/Leet-replies/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
+## Stack
+|  |
+| ------- |
+| [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/KILLERLUCIEN/Leet-replies/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
+## Bracket Sequences
+|  |
+| ------- |
+| [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/KILLERLUCIEN/Leet-replies/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
 <!---LeetCode Topics End-->
